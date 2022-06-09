@@ -1,0 +1,48 @@
+# Below, import the random module
+
+import random
+import time
+
+
+# Below, ask the user to type in a question that has a Yes or No answer.  Store their question in a variable with a good name.
+
+bin1 = input("Ask the magic 8-ball a question with a 'yes' or 'no' type answer: \n")
+
+# Below, use a list to store of all the possible responses you want your magic 8-ball to say when asked a question.  If you want to use the real responses for the real Magic 8-Ball, they can be found at:  https://en.wikipedia.org/wiki/Magic_8_Ball
+#  ----- Create your list of sayings below -----
+
+responses = ["It is certain.",
+"It is decidedly so.",
+"Without a doubt.",
+"Yes definitely.",
+"You can bet on it.",
+"As I see it, yeah.",
+"Most probably.",
+"Outlook good.",
+"Yes.",
+"Signs point to yes.",
+"Reply hazy, try again.",
+"Ask again later.",
+"Better not tell you now.",
+"Cannot predict now.",
+"Concentrate and ask again.",
+"Don't count on it.",
+"My reply is no.",
+"My sources say no.",
+"Outlook not so good.",
+"Very doubtful."]
+
+
+#  Below, let the program randomly choose a response
+
+answer = random.choice(responses)
+
+
+# Below, print out the user's question, and your random answer to that question
+
+time.sleep(3)
+print("One moment...")
+time.sleep(4)
+print("I'm thinking hard on this one..")
+time.sleep(5)
+print(bin1+"..", answer)
